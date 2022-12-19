@@ -1,0 +1,12 @@
+.application{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body{
+    margin: auto;
+    background-color: rgba(246, 246, 246, 1);
+}
