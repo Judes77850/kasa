@@ -1,0 +1,31 @@
+
+.erreur404Box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    color: rgb(255, 96, 96);
+}
+
+.erreur404Box h2{
+    font-size: 288px;
+    font-weight: 700;
+    margin: 0px;
+    line-height: 142.6%;
+}
+
+.erreur404Box p{
+    margin: 0;
+    font-size: 36px;
+}
+
+.erreur404Box a{
+    color: rgb(255, 96, 96);
+    text-decoration: underline;
+    font-size: 18px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}

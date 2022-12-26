@@ -5,3 +5,8 @@ footer{
     text-align: center;
     background-color: black;
 }
+
+.logoFooter{
+    margin-top: 10px;
+    color: white;
+}

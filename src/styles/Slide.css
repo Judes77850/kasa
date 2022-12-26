@@ -1,0 +1,90 @@
+.slideBox{
+    width: 100%;
+    height: 415px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideBox img{
+    width: 100%;
+    height: 415px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.index{
+    color: white;
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.arrowBox{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 100%;
+    height: 79px
+}
+
+.arrowBox .arrowRight{
+    width: 46px;
+    max-height: 79px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.arrowBox .arrowLeft{
+    width: 46px;
+    max-height: 79px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.sliderStyles{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideStyles{
+    width: 100%;
+    height: 100%;
+    border-Radius: 10px;
+    background-Size: cover;
+    background-Position: center;
+}
+
+@media only screen and (max-width: 800px)  {
+    .arrowBox .arrowRight{
+        width: 11.67px;
+        max-height: 19.8px;
+    }
+    
+    .arrowBox .arrowLeft{
+        width: 11.67px;
+        max-height: 19.8px;
+    }
+
+    .slideBox{
+        width: 100%;
+        height: 255px;
+    }
+    
+    .slideBox img{
+        width: 100%;
+        height: 255px;
+    }
+
+    .index{
+        display: none;
+    }
+
+}

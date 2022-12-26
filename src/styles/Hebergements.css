@@ -1,0 +1,235 @@
+.ficheLogement {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgba(255, 96, 96, 1);
+}
+
+h1{
+  font-size: 36px;
+}
+
+.location{
+  font-size: 18px;
+  margin-top: -18px;
+}
+
+.cardCover img {
+  width: 100%;
+  height: 415px;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  padding: 0px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.rateBox{
+  width: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: right;
+  margin-top: 15px;
+}
+
+.rateBox img{
+  margin-left: 6px;
+  width: 30px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+
+.description, .equipements {
+  color: rgba(255, 96, 96, 1);
+  margin-top: 40px;
+  max-width: 582px;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.hebContent1, .hebContent2{
+  font-size: 18px;
+  line-height: 26px;
+  background-color: #F6F6F6;
+  margin-top: -3px;
+  padding: 15px 5px 10px 20px;
+  border-radius: 5px;
+}
+
+.topDetailsPart{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 96, 96, 1);
+  width: 100%;
+  height: 52px;
+  border-radius: 10px;
+}
+
+.btn{
+  background-color: transparent;
+  border: none;
+}
+
+h3{
+  color: rgba(255, 255, 255, 1);
+  padding-left: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.tagsBox{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0px;
+  margin-top: 20px;
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 5px 0px 5px;
+  min-width: 105px;
+  margin-left: 0px;
+  margin-right: 10px;
+  height: 25px;
+  font-size: 14px;
+  background: rgba(255, 96, 96, 1);
+  color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+}
+
+.topPart {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 100%;
+}
+
+.hostBox{
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 18px;
+}
+
+.hostName{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: right;
+  margin-right: 15px;
+  width: 75px;
+  height: 52px;
+}
+
+.profilPicture img {
+  width: 64px;
+  border-radius: 100px;
+}
+
+@media only screen and (max-width: 800px)  {
+  h1{
+    font-size: 18px;
+  }
+
+  .topPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    width: 100%;
+  }
+
+  .location{
+    font-size: 14px;
+    margin-top: -5px;
+  }
+
+  .tags {
+    font-size: 10px;
+    border-radius: 5px;
+    min-width: 84px;
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    height: 18px;
+  }
+
+  .topRightPart{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hostBox{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .profilPicture img {
+    width: 32px;
+    border-radius: 100px;
+  }
+
+  .rateBox{
+    width: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: right;
+  }
+  
+  .rateBox img{
+    margin-left: 3px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .details{
+    flex-direction: column;
+  }
+
+  h3{
+    font-size: 13px;
+  }
+
+  .hebContent1, .hebContent2{
+    font-size: 12px;
+  }
+
+  .topDetailsPart h3{
+    color: rgba(255, 255, 255, 1);
+    padding-left: 20px;
+    border-radius: 10px;
+    font-size: 13px;
+  }
+
+  .description, .equipements {
+    color: rgba(255, 96, 96, 1);
+    margin-top: 30px;
+    max-width: 582px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+}

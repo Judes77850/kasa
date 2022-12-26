@@ -1,26 +1,29 @@
 import React from "react"
 import "../styles/LocPart.css"
 import Data from "../data.json"
-import { Link, useParams } from 'react-router-dom'
-
-Data.map((Data)=>(
-    console.log(Data.id)
-))
-
+import { Link } from 'react-router-dom'
 
 function CardCreate(){
     return(
         Data.map((Data)=>(
-            <Link to="../pages/FicheLogement/">
-                <div className="loc" key={Data.id}>
+            <Link to={`../Hebergements/` + Data.id} key={Data.id}>
+                <div className="loc" >
                     <div className="locGradient">
-                    <div className="cardCover"><img src={Data.cover} alt="couverture"></img></div>
                     <p className="locaTitle">{Data.title}</p>
                     </div>
                 </div>
             </Link>
         ))
         )
-    }
+}
     
-export default CardCreate
+
+function CardBox(){
+    return(
+        <div className="locBox">
+            {CardCreate()}
+        </div>
+    )
+}
+
+export default CardBox

@@ -1,0 +1,29 @@
+.aproposBanner{
+    background-image: url(../img/AproposMobile.png);
+    width: 100%;
+    height: 223px;
+    text-align: center;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+}
+
+.textPart{
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    opacity: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 800px)  {
+    .aproposBanner{
+        background-size: 105%;
+        background-position: 80%;
+    }
+}

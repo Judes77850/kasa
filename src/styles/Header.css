@@ -1,14 +1,19 @@
 header{
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    max-width: 1240px;
+}
+
+.logo{
+    background-image: url(../img/logoDesktop.png);
+    width: 210.32px;
+    height: 68px;
 }
 
 .headerTop{
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 ul{
@@ -16,40 +21,36 @@ ul{
 }
 
 li{
+    font-size: 24px;
     display: flex;
-    margin: 10px;
+}
+
+li:hover{
+    text-decoration: underline;
 }
 
 li a{
     color: rgb(255, 96, 96);
     text-decoration: none;
+    margin-left: 70px;
+    font-size: 24px;
 }
 
-.banner{
-    background-image: url(../img/desktopBanner.png);
-    width: 100%;
-    max-width: 1240px;
-    height: 223px;
-    text-align: center;
-    border-radius: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    margin: 40px 0px 40px 0px;
-}
+@media only screen and (max-width: 800px)  {
+    .logo{
+        background-image: url(../img/logoMobile.png);
+        width: 145px;
+        height: 47px;
+    }
 
-.bannerFilter{
-    background: #000000;
-    opacity: 0.3;
-    border-radius: 25px;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
+    li{
+        font-size: 12px;
+    }
 
-.textPart{
-    color: white;
-    font-size: 48px;
-    z-index: 3;
+    li a{
+        color: rgb(255, 96, 96);
+        text-decoration: none;
+        margin-left: 30px;
+        font-size: 12px;
+    }
 }

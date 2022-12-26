@@ -1,0 +1,91 @@
+.container{
+    width: 100%;
+    max-width: 1023px;
+}
+
+.box{
+    min-width: 100%;
+    max-width: 1023px;
+    background-color: #F6F6F6;
+    border-radius: 5px;
+    margin: 40px 0px 40px 0px;
+    transition-duration: 900ms;
+}
+
+.apropostopPart{
+    max-width: 1023px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgb(255, 96, 96);
+    height: 47px;
+    border-radius: 5px;
+}
+
+.apropostopPart h2{
+    font-size: 24px;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.apropostopPart .btn{
+    width: auto;
+    height: auto;
+    margin-right: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+.content{
+    width: 97%;
+    height: auto;
+    color: rgb(255, 96, 96);
+    border-radius: 5px;
+    padding: 0px 0px 5px 20px;
+    font-size: 24px;
+    line-height: 142.6%;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.fleche{
+    transform: rotate(0.5turn);
+}
+
+@media only screen and (max-width: 800px)  {
+    .box{
+        min-width: 100%;
+        max-width: 1023px;
+        background-color: #F6F6F6;
+        border-radius: 5px;
+        margin: 25px 0px 25px 0px;
+        transition-duration: 900ms;
+    }
+
+    .apropostopPart{
+        height: 30px;
+    }
+
+    .apropostopPart h2{
+        font-size: 13px;
+        margin-left: 10px;
+    }
+
+    .apropostopPart .btn{
+        width: 15.2px;
+        margin-right: 15px;
+    }
+
+    .btn .fleche{
+        width: 15.2px;
+        height: 8.98px;
+    }
+
+    .content{
+        width: 97%;
+        padding: 0px 0px 5px 10px;
+        font-size: 12px;
+    }
+    
+}

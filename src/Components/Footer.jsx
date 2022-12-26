@@ -1,11 +1,13 @@
 import React from "react";
 import "../styles/Footer.css";
-import Logo from "./Logo"
+import LogoFooter from "./LogoFooter"
 
 function Footer(){
     return (
         <footer>
-            {Logo()}
+            <div className="logoFooter">
+                {LogoFooter()}
+            </div>
             <p>
             © 2020 Kasa. All rights reserved
             </p>
