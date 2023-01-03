@@ -1,0 +1,39 @@
+.fleche{
+    animation: arrowRotateToTop 200ms;
+    animation-fill-mode: forwards;
+    width: 23.86px;
+}
+
+.flecheBas{
+    animation: arrowRotateToBottom 200ms;
+    animation-fill-mode: forwards;
+    width: 23.86px;
+}
+
+@keyframes arrowRotateToBottom {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 180deg;
+    }
+}
+
+@keyframes arrowRotateToTop {
+    0%{
+        rotate: 180deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
+
+@media only screen and (max-width: 800px)  {
+    .fleche{
+        width: 15.2px;
+    }
+    
+    .flecheBas{
+        width: 15.2px;
+    }
+}

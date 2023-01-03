@@ -8,12 +8,18 @@ import "../styles/Slide.css"
 function Slideshow(){
     const {id} = useParams()
     const logement = Data.find(a => a.id === id)
-    const slides = logement.pictures
-    return(
-        <div className="slideBox">
+    if (logement){
+        const slides = logement.pictures
+        return (
+            <div className="slideBox">
             <ImageSlider slides={slides} />
         </div>
-    )
+        )
+    }else{
+        return (
+            <div>""</div>
+        )
+    }
 }
 
 export default Slideshow

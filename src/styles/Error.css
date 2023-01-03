@@ -29,3 +29,28 @@
     margin-top: 150px;
     margin-bottom: 100px;
 }
+
+@media only screen and (max-width: 800px)  {
+    .erreur404Box h2{
+        font-size: 96px;
+        font-weight: 700;
+        margin: 0px;
+        line-height: 136.9%;
+    }
+
+    .erreur404Box p{
+        margin: auto;
+        font-size: 18px;
+        width: 300px;
+        line-height: 142.6%;
+        text-align: center;
+    }
+
+    .erreur404Box a{
+        font-size: 14px;
+        text-align: center;
+        margin-top: 100px;
+        line-height: 142.6%;
+        margin-bottom: 31%;
+    }
+}

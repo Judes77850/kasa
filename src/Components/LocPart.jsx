@@ -5,11 +5,13 @@ import { Link } from 'react-router-dom'
 
 function CardCreate(){
     return(
-        Data.map((Data)=>(
-            <Link to={`../Hebergements/` + Data.id} key={Data.id}>
-                <div className="loc" >
+        Data.map((logement)=>(
+            <Link to={`../Hebergements/` + logement.id} key={logement.id}>
+                <div className="loc" style={{ 
+                    backgroundImage: "url(" + logement.cover + ")" 
+                    }}>
                     <div className="locGradient">
-                    <p className="locaTitle">{Data.title}</p>
+                    <p className="locaTitle">{logement.title}</p>
                     </div>
                 </div>
             </Link>

@@ -1,5 +1,5 @@
 .aproposBanner{
-    background-image: url(../img/AproposMobile.png);
+    background-image: url(../img/Apropos.png);
     width: 100%;
     height: 223px;
     text-align: center;
@@ -23,6 +23,7 @@
 
 @media only screen and (max-width: 800px)  {
     .aproposBanner{
+        background-image: url(../img/AproposMobile.png);
         background-size: 105%;
         background-position: 80%;
     }

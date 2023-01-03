@@ -1,18 +1,24 @@
+
 .ficheLogement {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: rgba(255, 96, 96, 1);
+  color: #ff6060;
 }
 
 h1{
   font-size: 36px;
+  font-weight: 500;
+  line-height: 51.34px;
 }
 
 .location{
   font-size: 18px;
-  margin-top: -18px;
+  font-weight: 500;
+  line-height: 25.67px;
+  margin-top: -20px;
+  margin-bottom: 0px;
 }
 
 .cardCover img {
@@ -34,9 +40,10 @@ h1{
   margin-top: 15px;
 }
 
-.rateBox img{
-  margin-left: 6px;
+.stars svg{
+  margin-left: 3px;
   width: 30px;
+  height: 30px;
 }
 
 .details {
@@ -46,53 +53,104 @@ h1{
   margin: auto;
 }
 
-.description, .equipements {
-  color: rgba(255, 96, 96, 1);
-  margin-top: 40px;
-  max-width: 582px;
-  width: 48%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+.container{
+  width: 100%;
+  max-width: 1023px;
 }
 
-.hebContent1, .hebContent2{
-  font-size: 18px;
-  line-height: 26px;
+.container .box{
+  height: auto;
+  margin: 10px 0px 10px 0px;
+}
+
+.box{
+  min-width: 100%;
+  max-width: 1023px;
   background-color: #F6F6F6;
-  margin-top: -3px;
-  padding: 15px 5px 10px 20px;
   border-radius: 5px;
+  margin: 40px 0px 40px 0px;
+  transition-duration: 200ms;
 }
 
-.topDetailsPart{
+.collapseTopPart{
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(255, 96, 96, 1);
-  width: 100%;
-  height: 52px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgb(255, 96, 96);
+  height: 47px;
   border-radius: 10px;
 }
 
-.btn{
+.container .collapseTopPart h2{
+  font-size: 18px;
+  margin-left: 15px;
+  font-weight: 500;
+}
+
+.details .container{
+  width: 47%;
+}
+
+.collapseTopPart .btn{
+  width: auto;
+  height: auto;
+  margin-right: 10px;
   background-color: transparent;
   border: none;
 }
 
-h3{
-  color: rgba(255, 255, 255, 1);
-  padding-left: 20px;
-  border-radius: 10px;
+.content {
+  width: 95%;
+  height: auto;
+  color: rgb(255, 96, 96);
+  border-radius: 5px;
+  line-height: 142.6%;
+  font-style: normal;
+  font-weight: 400;
   font-size: 18px;
+}
+
+.contentToBottom{
+  animation: contentToBottom 200ms;
+  animation-fill-mode: forwards;
+  padding-left: 15px;
+  margin-right: 5px;
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+
+.contentToTop{
+  animation: contentToTop 200ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes contentToBottom {
+  0%{
+      height: 0%;
+  }
+  100%{
+      height: 100%;
+  }
+}
+
+@keyframes contentToTop {
+  0%{
+      height: 100%;
+  }
+  100%{
+      height: 0%;
+  }
 }
 
 .tagsBox{
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-wrap: wrap;
   margin: 0px;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .tags {
@@ -140,9 +198,11 @@ h3{
   border-radius: 100px;
 }
 
+
 @media only screen and (max-width: 800px)  {
   h1{
     font-size: 18px;
+    line-height: 142.6%;
   }
 
   .topPart {
@@ -155,7 +215,8 @@ h3{
 
   .location{
     font-size: 14px;
-    margin-top: -5px;
+    margin-top: -10px;
+    line-height: 142.6%;
   }
 
   .tags {
@@ -197,7 +258,7 @@ h3{
     text-align: right;
   }
   
-  .rateBox img{
+  .stars svg{
     margin-left: 3px;
     width: 15px;
     height: 15px;
@@ -207,29 +268,19 @@ h3{
     flex-direction: column;
   }
 
-  h3{
+  .collapseTopPart{
+    height: 39.93px;
+  }
+
+  .container .collapseTopPart h2{
     font-size: 13px;
+    margin-left: 15px;
+    font-weight: 500;
   }
 
-  .hebContent1, .hebContent2{
-    font-size: 12px;
-  }
-
-  .topDetailsPart h3{
-    color: rgba(255, 255, 255, 1);
-    padding-left: 20px;
-    border-radius: 10px;
-    font-size: 13px;
-  }
-
-  .description, .equipements {
-    color: rgba(255, 96, 96, 1);
-    margin-top: 30px;
-    max-width: 582px;
+  .details .container{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    font-size: 12px;
   }
 
 }

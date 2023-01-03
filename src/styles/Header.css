@@ -12,8 +12,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 ul{
@@ -23,18 +23,21 @@ ul{
 li{
     font-size: 24px;
     display: flex;
-}
-
-li:hover{
-    text-decoration: underline;
-}
-
-li a{
-    color: rgb(255, 96, 96);
     text-decoration: none;
     margin-left: 70px;
     font-size: 24px;
+    font-weight: 500;
 }
+
+li .link{
+    color: rgb(255, 96, 96);
+}
+
+li .linkActive{
+    color: rgb(255, 96, 96);
+    text-decoration: underline;
+}
+
 
 @media only screen and (max-width: 800px)  {
     .logo{
@@ -45,12 +48,22 @@ li a{
 
     li{
         font-size: 12px;
+        margin-left: 30px;
     }
 
-    li a{
+    li .link{
         color: rgb(255, 96, 96);
         text-decoration: none;
-        margin-left: 30px;
+        margin-left: 0px;
         font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    li .linkActive{
+        color: rgb(255, 96, 96);
+        text-decoration: underline;
+        margin-left: 0px;
+        font-size: 12px;
+        text-transform: uppercase;
     }
 }
