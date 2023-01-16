@@ -22,7 +22,7 @@ function Collapse(props){
     function ContentAnim() {
         if (!open){
             return(
-                <div className="contentToTop">{props.text}</div>
+                ""
                 )
         }else{
             return(    
@@ -38,7 +38,7 @@ function Collapse(props){
                         {ArrowAnim()}
                     </button>
                 </div>
-                {open && <div>
+                {open && <div className="contentPart">
                     {ContentAnim()}
                 </div>}
             </div>

@@ -48,7 +48,6 @@ function FicheLogement(){
         return (
             <Navigate to="/error" />
         )
-
     }
 }
 
