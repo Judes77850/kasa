@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kasa/static/css/main.fcdb9e91.css",
-    "main.js": "/kasa/static/js/main.966d1c4f.js",
+    "main.js": "/kasa/static/js/main.41d055ba.js",
     "static/media/Apropos.png": "/kasa/static/media/Apropos.ed819f2cc2faefb4fba2.png",
     "static/media/desktopBanner.png": "/kasa/static/media/desktopBanner.40371f11171ba050e175.png",
     "static/media/Montserrat-VariableFont_wght.ttf": "/kasa/static/media/Montserrat-VariableFont_wght.3faa3eef13649db02044.ttf",
@@ -9,10 +9,10 @@
     "static/media/bannerMobile.png": "/kasa/static/media/bannerMobile.b200f84adc270a81fb19.png",
     "index.html": "/kasa/index.html",
     "main.fcdb9e91.css.map": "/kasa/static/css/main.fcdb9e91.css.map",
-    "main.966d1c4f.js.map": "/kasa/static/js/main.966d1c4f.js.map"
+    "main.41d055ba.js.map": "/kasa/static/js/main.41d055ba.js.map"
   },
   "entrypoints": [
     "static/css/main.fcdb9e91.css",
-    "static/js/main.966d1c4f.js"
+    "static/js/main.41d055ba.js"
   ]
 }
