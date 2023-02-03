@@ -18,6 +18,7 @@ function App() {
         <Header />
           <Routes> 
             <Route path="/" element={<><Banner/><LocPart/></>}/>
+            <Route path="/kasa" element={<><Banner/><LocPart/></>}/>
             <Route path="/Hebergements/:id" element={<><Slide/><Hebergements/></>} />
             <Route path="/Apropos" element={<><AproposBanner/><Apropos /></>} />
             <Route path="/*" element={<Error />} />
